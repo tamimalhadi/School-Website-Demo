@@ -1,44 +1,122 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="bn">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>হোম - বি.কে মাধ্যমিক বিদ্যালয়</title><link rel="stylesheet" href="assets/style.css"></head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>বি.কে মাধ্যমিক বিদ্যালয় - Badhal Bazar, Kochua, Bagerhat</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
 <body>
-<div class="container">
-  <header class="header">
-    <div class="top">
-      <div class="logo"><div class="mark">BK</div><div><h1>বি.কে মাধ্যমিক বিদ্যালয়</h1><div class="small">Badhal Bazar, Kochua, Bagerhat • ১৯৭৪ থেকে</div></div></div>
-      <nav class="nav"><a href="index.html">হোম</a><a href="about.html">আমাদের সম্পর্কে</a><a href="academics.html">একাডেমিকস</a><a href="admissions.html">ভর্তি</a><a href="faculty.html">শিক্ষকবৃন্দ</a><a href="student-life.html">ছাত্রজীবন</a><a href="contact.html">যোগাযোগ</a></nav>
-<button class="menu-toggle" aria-label="Menu">&#9776;</button>
-    </div>
-  </header>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>বি.কে মাধ্যমিক বিদ্যালয়</h2>
+                <span>১৯৭৪ থেকে</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link active">হোম</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">আমাদের সম্পর্কে</a></li>
+                <li class="nav-item"><a href="academics.html" class="nav-link">একাডেমিকস</a></li>
+                <li class="nav-item"><a href="admission.html" class="nav-link">ভর্তি</a></li>
+                <li class="nav-item"><a href="teachers.html" class="nav-link">শিক্ষকবৃন্দ</a></li>
+                <li class="nav-item"><a href="student-life.html" class="nav-link">ছাত্রজীবন</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">যোগাযোগ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-  
-<section class="hero">
-  <div class="hero-left">
-    <h2>শিক্ষা ও চরিত্র গঠনে আমাদের অঙ্গীকার</h2>
-    <p class="small">১৯৭৪ সাল থেকে বি.কে মাধ্যমিক বিদ্যালয়, Badhal Bazar, Kochua, Bagerhat-এ শিক্ষার মান উন্নয়ন করে চলছে।</p>
-    <a class="btn" href="admissions.html">ক্লাস ৬-এ ভর্তি আবেদন করুন</a>
-  </div>
-  <div class="side-card card">
-    <img src="assets/images/hero.png" alt="hero" style="width:100%;border-radius:8px;margin-bottom:10px"/>
-    <div class="small"><strong>সার্বশেষ সংবাদ:</strong> ভর্তি চলছে — ক্লাস ৬</div>
-    <div class="small" style="margin-top:8px"><strong>উল্লেখযোগ্য:</strong> ২০০১-২০০৫ সাল পর্যন্ত ধারাবাহিক এসএসসি A+ ফলাফল</div>
-  </div>
-</section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">শিক্ষা ও চরিত্র গঠনে আমাদের অঙ্গীকার</h1>
+            <p class="hero-subtitle">১৯৭৪ সাল থেকে বি.কে মাধ্যমিক বিদ্যালয়, Badhal Bazar, Kochua, Bagerhat-এ শিক্ষার মান উন্নয়ন করে চলছে।</p>
+            <a href="admission.html" class="cta-button">ক্লাস ৬-এ ভর্তি আবেদন করুন</a>
+        </div>
+        <div class="hero-image">
+            <div class="school-building">
+                <i class="fas fa-school"></i>
+            </div>
+        </div>
+    </section>
 
-<section class="section card">
-  <h3>আমাদের কার্যক্রম</h3>
-  <div class="grid cols-3" style="margin-top:12px">
-    <div class="card"><h4>শিক্ষা কার্যক্রম</h4><p class="small">ক্লাস ৬ থেকে ১০ পর্যন্ত মানসম্মত পাঠ্যক্রম এবং পরীক্ষামূলক সহায়তা।</p></div>
-    <div class="card"><h4>অতিরিক্ত কার্যক্রম</h4><p class="small">ক্রীড়া, সাংস্কৃতিক অনুষ্ঠান, বিজ্ঞান ক্লাব, বিতর্ক প্রতিযোগিতা।</p></div>
-    <div class="card"><h4>কমিউনিটি</h4><p class="small">পিতা-মাতা ও স্থানীয় কমিউনিটির সাথে নিকট সহযোগিতা।</p></div>
-  </div>
-</section>
+    <!-- News Section -->
+    <section class="news-section">
+        <div class="container">
+            <div class="news-banner">
+                <i class="fas fa-bullhorn"></i>
+                <span class="news-label">সার্বশেষ সংবাদ:</span>
+                <span class="news-text">ভর্তি চলছে — ক্লাস ৬</span>
+            </div>
+            <div class="achievement-banner">
+                <i class="fas fa-trophy"></i>
+                <span class="achievement-text">উল্লেখযোগ্য: ২০০১-২০০৫ সাল পর্যন্ত ধারাবাহিক এসএসসি A+ ফলাফল</span>
+            </div>
+        </div>
+    </section>
 
+    <!-- Activities Section -->
+    <section class="activities">
+        <div class="container">
+            <h2 class="section-title">আমাদের কার্যক্রম</h2>
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>শিক্ষা কার্যক্রম</h3>
+                    <p>ক্লাস ৬ থেকে ১০ পর্যন্ত মানসম্মত পাঠ্যক্রম এবং পরীক্ষামূলক সহায়তা।</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <h3>অতিরিক্ত কার্যক্রম</h3>
+                    <p>ক্রীড়া, সাংস্কৃতিক অনুষ্ঠান, বিজ্ঞান ক্লাব, বিতর্ক প্রতিযোগিতা।</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>কমিউনিটি</h3>
+                    <p>পিতা-মাতা ও স্থানীয় কমিউনিটির সাথে নিকট সহযোগিতা।</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer style="margin-top:28px;text-align:center;padding:18px;background:linear-gradient(90deg,#0b6efd,#7c3aed);color:white;border-radius:10px;">
-    © ২০২৫ বি.কে মাধ্যমিক বিদ্যালয় • আর-৭৭০, ইউনিয়ন: বাদলবাজার, উপজেলা: মোরেলগঞ্জ, জেলা: বাগেরহাট, বিভাগ: খুলনা • ফোন: <a href="tel:01726844078" style="color:white;text-decoration:underline">01726844078</a>
-  </footer>
-</div>
-<script src="assets/script.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>বি.কে মাধ্যমিক বিদ্যালয়</h3>
+                    <p>আর-৭৭০, ইউনিয়ন: বাদলবাজার, উপজেলা: মোরেলগঞ্জ</p>
+                    <p>জেলা: বাগেরহাট, বিভাগ: খুলনা</p>
+                    <p><i class="fas fa-phone"></i> ০১৭২৬৮৪৪০৭৮</p>
+                </div>
+                <div class="footer-links">
+                    <h4>দ্রুত লিংক</h4>
+                    <ul>
+                        <li><a href="admission.html">ভর্তি</a></li>
+                        <li><a href="academics.html">একাডেমিকস</a></li>
+                        <li><a href="contact.html">যোগাযোগ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; ২০২৫ বি.কে মাধ্যমিক বিদ্যালয়। সকল অধিকার সংরক্ষিত।</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

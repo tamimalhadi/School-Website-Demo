@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ভর্তি - বি.কে মাধ্যমিক বিদ্যালয়</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>বি.কে মাধ্যমিক বিদ্যালয়</h2>
+                <span>১৯৭৪ থেকে</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">হোম</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">আমাদের সম্পর্কে</a></li>
+                <li class="nav-item"><a href="academics.html" class="nav-link">একাডেমিকস</a></li>
+                <li class="nav-item"><a href="admission.html" class="nav-link active">ভর্তি</a></li>
+                <li class="nav-item"><a href="teachers.html" class="nav-link">শিক্ষকবৃন্দ</a></li>
+                <li class="nav-item"><a href="student-life.html" class="nav-link">ছাত্রজীবন</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">যোগাযোগ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="page-content">
+        <div class="page-header">
+            <div class="container">
+                <h1 class="page-title">ভর্তি তথ্য ও আবেদন</h1>
+                <p>২০২৫ শিক্ষাবর্ষে ভর্তি চলছে</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- Admission Info -->
+            <div class="content-section">
+                <h2><i class="fas fa-info-circle"></i> ভর্তির তথ্য</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <h4><i class="fas fa-calendar-alt"></i> ভর্তির সময়</h4>
+                        <p><strong>ক্লাস ৬:</strong> জানুয়ারি - ফেব্রুয়ারি<br>
+                        <strong>অন্যান্য ক্লাস:</strong> আসন খালি সাপেক্ষে</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4><i class="fas fa-money-bill-wave"></i> ভর্তি ফি</h4>
+                        <p><strong>ক্লাস ৬-৮:</strong> ২,০০০ টাকা<br>
+                        <strong>ক্লাস ৯-১০:</strong> ৩,০০০ টাকা</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4><i class="fas fa-file-alt"></i> প্রয়োজনীয় কাগজপত্র</h4>
+                        <p>জন্ম নিবন্ধন, পূর্ববর্তী ক্লাসের সার্টিফিকেট, ছবি</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4><i class="fas fa-users"></i> আসন সংখ্যা</h4>
+                        <p><strong>প্রতি শ্রেণীতে:</strong> ৪০ জন<br>
+                        <strong>মোট শাখা:</strong> ২টি</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Admission Form -->
+            <div class="content-section">
+                <h2><i class="fas fa-edit"></i> ভর্তির আবেদনপত্র</h2>
+                <p style="margin-bottom: 2rem; color: #555;">নিচের ফর্মটি পূরণ করে আপনার সন্তানের ভর্তির জন্য আবেদন করুন। সকল তথ্য সঠিকভাবে প্রদান করুন।</p>
+                
+                <div class="form-container">
+                    <form id="admissionForm">
+                        <!-- Student Information -->
+                        <h3 style="color: #2c3e50; margin-bottom: 1.5rem; border-bottom: 2px solid #3498db; padding-bottom: 0.5rem;">
+                            <i class="fas fa-user"></i> শিক্ষার্থীর তথ্য
+                        </h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="studentName">শিক্ষার্থীর নাম (বাংলায়) *</label>
+                                <input type="text" id="studentName" name="studentName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="studentNameEn">শিক্ষার্থীর নাম (ইংরেজিতে) *</label>
+                                <input type="text" id="studentNameEn" name="studentNameEn" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="birthDate">জন্ম তারিখ *</label>
+                                <input type="date" id="birthDate" name="birthDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="gender">লিঙ্গ *</label>
+                                <select id="gender" name="gender" required>
+                                    <option value="">নির্বাচন করুন</option>
+                                    <option value="male">পুরুষ</option>
+                                    <option value="female">মহিলা</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="admissionClass">ভর্তিচ্ছু শ্রেণী *</label>
+                                <select id="admissionClass" name="admissionClass" required>
+                                    <option value="">নির্বাচন করুন</option>
+                                    <option value="6">ষষ্ঠ শ্রেণী</option>
+                                    <option value="7">সপ্তম শ্রেণী</option>
+                                    <option value="8">অষ্টম শ্রেণী</option>
+                                    <option value="9">নবম শ্রেণী</option>
+                                    <option value="10">দশম শ্রেণী</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="previousSchool">পূর্ববর্তী বিদ্যালয়ের নাম *</label>
+                                <input type="text" id="previousSchool" name="previousSchool" required>
+                            </div>
+                        </div>
+
+                        <!-- Parent Information -->
+                        <h3 style="color: #2c3e50; margin: 2rem 0 1.5rem 0; border-bottom: 2px solid #3498db; padding-bottom: 0.5rem;">
+                            <i class="fas fa-users"></i> অভিভাবকের তথ্য
+                        </h3>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fatherName">পিতার নাম *</label>
+                                <input type="text" id="fatherName" name="fatherName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="motherName">মাতার নাম *</label>
+                                <input type="text" id="motherName" name="motherName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="guardianPhone">অভিভাবকের মোবাইল নম্বর *</label>
+                                <input type="tel" id="guardianPhone" name="guardianPhone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">ইমেইল ঠিকানা</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                        </div>
+
+                        <!-- Address Information -->
+                        <h3 style="color: #2c3e50; margin: 2rem 0 1.5rem 0; border-bottom: 2px solid #3498db; padding-bottom: 0.5rem;">
+                            <i class="fas fa-map-marker-alt"></i> ঠিকানা
+                        </h3>
+
+                        <div class="form-group">
+                            <label for="permanentAddress">স্থায়ী ঠিকানা *</label>
+                            <textarea id="permanentAddress" name="permanentAddress" rows="3" required></textarea>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="district">জেলা *</label>
+                                <input type="text" id="district" name="district" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="upazila">উপজেলা *</label>
+                                <input type="text" id="upazila" name="upazila" required>
+                            </div>
+                        </div>
+
+                        <!-- Declaration -->
+                        <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; margin: 2rem 0;">
+                            <h4 style="color: #2c3e50; margin-bottom: 1rem;">ঘোষণা:</h4>
+                            <div style="margin-bottom: 1rem;">
+                                <input type="checkbox" id="declaration1" name="declaration1" required>
+                                <label for="declaration1" style="margin-left: 0.5rem;">আমি ঘোষণা করছি যে, উপরোক্ত সকল তথ্য সত্য ও সঠিক।</label>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <input type="checkbox" id="declaration2" name="declaration2" required>
+                                <label for="declaration2" style="margin-left: 0.5rem;">আমি বিদ্যালয়ের নিয়ম-কানুন মেনে চলতে সম্মত।</label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> আবেদন জমা দিন
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Contact for Admission -->
+            <div class="content-section">
+                <h2><i class="fas fa-phone"></i> ভর্তি সংক্রান্ত যোগাযোগ</h2>
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h4>প্রধান শিক্ষক</h4>
+                        <p>মোছাঃ সালমা খাতুন</p>
+                        <p><i class="fas fa-phone"></i> ০১৭২৬৮৪৪০৭৮</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>অফিস সময়</h4>
+                        <p>সকাল ৮:০০ - দুপুর ২:০০</p>
+                        <p>শনিবার - বৃহস্পতিবার</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>ঠিকানা</h4>
+                        <p>বাদলবাজার, কোচুয়া</p>
+                        <p>বাগেরহাট</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>বি.কে মাধ্যমিক বিদ্যালয়</h3>
+                    <p>আর-৭৭০, ইউনিয়ন: বাদলবাজার, উপজেলা: মোরেলগঞ্জ</p>
+                    <p>জেলা: বাগেরহাট, বিভাগ: খুলনা</p>
+                    <p><i class="fas fa-phone"></i> ০১৭২৬৮৪৪০৭৮</p>
+                </div>
+                <div class="footer-links">
+                    <h4>দ্রুত লিংক</h4>
+                    <ul>
+                        <li><a href="admission.html">ভর্তি</a></li>
+                        <li><a href="academics.html">একাডেমিকস</a></li>
+                        <li><a href="contact.html">যোগাযোগ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; ২০২৫ বি.কে মাধ্যমিক বিদ্যালয়। সকল অধিকার সংরক্ষিত।</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
